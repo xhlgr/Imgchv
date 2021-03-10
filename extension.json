@@ -1,0 +1,43 @@
+{
+	"name": "Imgchv",
+	"version": "0.1.0",
+	"author": [
+		"Xhlgr"
+	],
+	"url": "https://gitee.com/xhlgr/imgchv",
+	"descriptionmsg": "imgchv-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AutoloadClasses": {
+		"ImgchvHooks": "includes/ImgchvHooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "ImgchvHooks::onParserFirstCallInit"
+	},
+	"config": {
+		"ImgchvDomainName": {
+			"description": "DomainName in external link by Chevereto website.",
+			"value": []
+		}
+	},
+	"MessagesDirs": {
+		"Imgchv": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "Imgchv/resources"
+	},
+	"ResourceModules": {
+		"ext.imgchv": {
+		    "styles": [],
+			"scripts": ["imgchv.js"],
+			"targets": ["desktop","mobile"]
+		}
+	},
+	"manifest_version": 2
+}
