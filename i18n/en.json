@@ -1,4 +1,4 @@
 {
-  "imgchvmd-desc": "Adds <code>&lt;imgchv/&gt;</code>.For external images made by chevereto, change image.jpg to show image.md.jpg, and click button to show original image",
+  "imgchvmd-desc": "Adds <code>&lt;imgchv/&gt;</code>.For external images in  chevereto website, change image.jpg to show image.md.jpg, and click button to show original image",
   "imgchv-button-showoimg":"show original"
 }
