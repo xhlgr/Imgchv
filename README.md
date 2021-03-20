@@ -9,6 +9,6 @@
 ## 使用方法
 * 下载放在extensions/文件夹内；
 * 在LocalSettings.php加入`wfLoadExtension( 'Imgchv' );`；
-* 设置参数`$wgImgchvDomainName=["s1.ax1x.com","s2.ax1x.com","s3.ax1x.com"];`（以路过图床的外链为例，需要填写完整子域名，任何Chevereto程序的图床网站外链均可）；
+* 设置参数`$wgImgchvDomainName=["子域名"];`（需要填写完整子域名，如a.xxx.com，需要填写完整子域名，任何Chevereto程序的图床网站外链均可）；
 * 完成。
 * 在需要使用时写：`<imgchv width="" height="" src=""/>`。其中src为Chevereto的图床程序的原图链接。
