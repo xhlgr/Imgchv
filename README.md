@@ -12,3 +12,5 @@
 * 设置参数`$wgImgchvDomainName=["子域名"];`（需要填写完整子域名，如a.xxx.com，需要填写完整子域名，任何Chevereto程序的图床网站外链均可）；
 * 完成。
 * 在需要使用时写：`<imgchv width="" height="" src=""/>`。其中src为Chevereto的图床程序的原图链接。
+## 更新日志
+20210328:调整使用自带按钮样式；使用hover显示按钮，但有bug：插件的css貌似最后才加载，会先显示按钮，待完全加载完页面css才会隐藏按钮。
