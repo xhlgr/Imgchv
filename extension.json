@@ -34,7 +34,7 @@
 	},
 	"ResourceModules": {
 		"ext.imgchv": {
-		    "styles": [],
+			"styles": ["imgchv.css"],
 			"scripts": ["imgchv.js"],
 			"targets": ["desktop","mobile"]
 		}
