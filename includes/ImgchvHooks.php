@@ -28,7 +28,7 @@ class ImgchvHooks {
         		$tmp1 = substr($tmpurl,0,strrpos($tmpurl,'.'));
         		$tmp2 = substr($tmpurl,strrpos($tmpurl,'.'));
         		$mdurl = 'https://'.$tmp1.'.md'.$tmp2;
-        		$outhtml =  '<div style="position:relative;width:'.$inputwidth.';height:'.$inputheight.';"><img width=100% src="'.$mdurl.'" /><button class="button-showoimg" data-src="'.$inputurl.'" style="position:absolute;top:0;right:0;background-color:white;border-color:blue;color:black;box-shadow: 1px 1px 3px black;" type="button">'.wfMessage("imgchv-button-showoimg")->text().'</button></div>';
+        		$outhtml =  '<div class="mdimgdiv" style="position:relative;width:'.$inputwidth.';height:'.$inputheight.';"><img width=100% src="'.$mdurl.'"/><button class="showoimg mw-ui-button mw-ui-progressive" data-src="'.$inputurl.'" style="position:absolute;top:0;right:0;box-shadow: 1px 1px 3px black;" type="button">'.wfMessage("imgchv-button-showoimg")->text().'</button></div>';
     		}else{//url not in array
     		    $outhtml = '<div style="position:relative;width:'.$inputwidth.';height:'.$inputheight.';"><img width=100% src="'.$inputurl.'" /></div>';
     		}
