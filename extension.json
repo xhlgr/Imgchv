@@ -1,6 +1,6 @@
 {
 	"name": "Imgchv",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"author": [
 		"Xhlgr"
 	],
@@ -21,6 +21,10 @@
 		"ImgchvDomainName": {
 			"description": "DomainName in external link by Chevereto website.",
 			"value": []
+		},
+		"ImgchvDsrc": {
+			"description": "The src when src not set.",
+			"value": ""
 		}
 	},
 	"MessagesDirs": {
