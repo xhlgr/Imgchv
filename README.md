@@ -9,10 +9,11 @@
 ## 使用方法
 * 下载放在extensions/文件夹内；
 * 在LocalSettings.php加入`wfLoadExtension( 'Imgchv' );`；
-* 设置参数`$wgImgchvDomainName=["子域名"];`（需要填写完整子域名，如a.xxx.com，需要填写完整子域名，任何Chevereto程序的图床网站外链均可，需要其中等图片链接只是在文件扩展名前面加“.md”的才行）；
+* 设置参数`$wgImgchvDomainName=["域名"];`（填写主域名（其子域名均进行操作）或子域名，如xxx.com或a.xxx.com，任何Chevereto程序的图床网站外链均可，需要其中等图片链接只是在文件扩展名前面加“.md”的才行）；
 * 设置参数`$wgImgchvDsrc="默认图片网址";`（当没有设置src时，显示此默认图片，不设置此参数则显示“没有图片”）；(v0.1.1增加)
 * 完成。
 * 在需要使用时写：`<imgchv width="" height="" src=""/>`。其中src为Chevereto的图床程序的原图链接。
 ## 更新日志
+* 20210405：对$wgImgchvDomainName增加主域名判断，无需逐一设置子域名。
 * v0.1.1(20210404):增加默认图片；php curl判断中等图片链接是否存在（可能耗费服务器资源增加解析耗时，因为当图片小于chevereto设置的中等图片宽度或高度时，不会生成中等图片。尝试img标签使用onerror没有作用）；调整无需使用中等图片的，直接输出img标签。
 * 20210328:调整使用自带按钮样式；使用hover显示按钮，但有bug：插件的css貌似最后才加载，会先显示按钮，待完全加载完页面css才会隐藏按钮。
