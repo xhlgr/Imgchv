@@ -28,6 +28,13 @@ class ImgchvHooks {
         }else{
             $tmpurl = preg_replace('/^(http|https):\/\//', '',$inputurl);
     		$tmpdomain = substr($tmpurl,0,strpos($tmpurl,'/'));
+		if(!in_array($tmpdomain,$wgImgchvDomainName)){//first not in array then get the primary domain
+    		    $tmpdomainarr = explode('.',$tmpdomain);
+    		    $tmax = count($tmpdomainarr);
+    		    if($tmax>1){
+    		        $tmpdomain = $tmpdomainarr[$tmax-2].'.'.$tmpdomainarr[$tmax-1];
+    		    }
+    		}
     		if(in_array($tmpdomain,$wgImgchvDomainName) && strpos($tmpurl,'.md.')===false){//url in array
         		$tmp1 = substr($tmpurl,0,strrpos($tmpurl,'.'));
         		$tmp2 = substr($tmpurl,strrpos($tmpurl,'.'));
