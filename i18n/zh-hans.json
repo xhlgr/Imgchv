@@ -1,4 +1,4 @@
 {
-  "imgchv-desc": "增加<code>&lt;imgchv/&gt;</code>标签，对Chevereto程序的外链图片修改为显示中等图片，且提供按钮显示原图。",
-  "imgchv-button-showoimg":"显示原图"
+	"imgchv-desc": "增加<code>&lt;imgchv/&gt;</code>标签，对Chevereto程序的外链图片修改为显示中等图片，且提供按钮显示原图。",
+	"imgchv-button-showoimg":"显示原图"
 }
