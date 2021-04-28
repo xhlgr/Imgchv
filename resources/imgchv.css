@@ -1,12 +1,12 @@
 .showoimg{
-    display:none;
+	display:none;
 }
 .mdimgdiv:hover .showoimg{
-    display:inline-block;
+	display:inline-block;
 }
 #showoimgclose{
-    display:none;
+	display:none;
 }
 #showoimgdiv:hover #showoimgclose{
-    display:inline-block;
+	display:inline-block;
 }
