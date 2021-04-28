@@ -15,7 +15,8 @@
 		"ImgchvHooks": "includes/ImgchvHooks.php"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "ImgchvHooks::onParserFirstCallInit"
+		"ParserFirstCallInit": "ImgchvHooks::onParserFirstCallInit",
+		"BeforePageDisplay": "ImgchvHooks::onBeforePageDisplay"
 	},
 	"config": {
 		"ImgchvDomainName": {
