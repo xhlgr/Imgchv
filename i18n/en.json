@@ -1,4 +1,5 @@
 {
 	"imgchvmd-desc": "Adds <code>&lt;imgchv/&gt;</code>.For external images in chevereto website, change image.jpg to show image.md.jpg, and click button to show original image",
+	"imgchv-div-nodefaultimg": "No Picture",
 	"imgchv-button-showoimg":"show original"
 }
